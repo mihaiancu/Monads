@@ -1,6 +1,6 @@
 # Monad ⟺ Bind
 
-This repository provides a Lean 4 proof that one can get the Category Theory **Monad** laws from the Functional Programming **Bind** laws, and vice versa. We consider the [Category `Type`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Types/Basic.html), where _objects_ are _types_ and _morphisms_ are _functions_.
+This repository provides Lean 4 proofs that one can get the Category Theory **Monad** laws from the Functional Programming **Bind** laws, and vice versa. We consider the [Category `Type`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Types/Basic.html), where _objects_ are _types_ and _morphisms_ are _functions_.
 
 See the ![Monads diagram](./MonadBind.pdf) for a handwritten schematic view.
 
