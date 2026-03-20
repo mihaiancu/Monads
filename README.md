@@ -154,7 +154,7 @@ The equivalence is fully formalized in `MonadBind_default.lean`:
 
 ---
 
-## 7. Self-Contained Formalization with Custom Classes
+## 6. Self-Contained Formalization with Custom Classes
 
 The file `MonadBind_classes.lean` provides a fully self-contained formalization that does not depend on Mathlib. It defines its own `Bind` and `Monad` type classes and proves the equivalence by constructing instances in both directions.
 
