@@ -94,11 +94,9 @@ MMMα ──────────→ MMα
  ↓                ↓
 MMα  ───────────→ Mα
          join_α
-
-      (Associativity)
 ```
 
-### pure is unity (left and right unit)
+### pure is unit
 
 - $\text{join}\ (\text{pure}\ x') = x'$
 - $\text{join}\ (m\ \text{pure}\ x') = x'$
@@ -112,7 +110,6 @@ MMα  ───────────→ Mα
    ↓               ↓          ↓               ↓
   Mα ════════════ Mα         Mα ════════════ Mα
 
-     (Left unity)               (Right unity)
 ```
 
 ---
@@ -127,12 +124,7 @@ $$m\ f\ x' := x' \mathtt{>>=}  (\text{pure} \circ f)$$
 
 $$\text{join}\ x'' := x'' \mathtt{>>=}  \text{id}_{M\alpha}$$
 
-Then the three Bind laws imply all the Monad laws:
-- **m is a functor** (from right identity + associativity)
-- **pure is natural** (from left identity)
-- **join is natural** (from associativity + left identity)
-- **join is associative** (from associativity + left identity)
-- **pure is unity** (from left identity + right identity)
+Then the Bind laws imply all the Monad laws.
 
 ### From Monad to Bind (Monad ⟹ Bind)
 
@@ -140,10 +132,8 @@ Given `m`, `join`, and `pure`, define:
 
 $$x' \mathtt{>>=} f' := \text{join}\ (m\ f'\ x')$$
 
-Then the Monad laws imply all the Bind laws:
-- **Right identity**: from $m\ \text{pure} \circ \text{join} = \text{id}$ (right unit)
-- **Left identity**: from naturality of pure + left unit
-- **Associativity**: from functoriality of $m$, naturality of join, and associativity of join
+Then the Monad laws imply all the Bind laws.
+
 ---
 
 ## 5. Lean-Mathlib Formalization
