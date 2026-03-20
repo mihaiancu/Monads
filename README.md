@@ -114,7 +114,7 @@ MMα  ───────────→ Mα
 
 ---
 
-## 4. The Bridge: Translating Between Bind and Monad
+## 4. Translating between Bind and Monad
 
 ### From Bind to Monad (Bind ⟹ Monad)
 
@@ -154,7 +154,7 @@ The equivalence is fully formalized in `MonadBind_default.lean`:
 
 ---
 
-## 6. Self-Contained Formalization with Custom Classes
+## 6. Self-Contained Formalization with Classes
 
 The file `MonadBind_classes.lean` provides a fully self-contained formalization that does not depend on Mathlib. It defines its own `Bind` and `Monad` type classes and proves the equivalence by constructing instances in both directions.
 
